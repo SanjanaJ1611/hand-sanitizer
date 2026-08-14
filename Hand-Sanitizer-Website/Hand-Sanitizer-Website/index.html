@@ -1,0 +1,541 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Preparation of Hand Sanitizer | Engineering Chemistry Project</title>
+<meta name="description" content="An interactive Engineering Chemistry laboratory project on the preparation of hand sanitizer — materials, procedure, applications and more.">
+<meta name="keywords" content="hand sanitizer, engineering chemistry, laboratory project, chemistry experiment">
+<meta name="author" content="Engineering Chemistry Team">
+
+<!-- Open Graph -->
+<meta property="og:title" content="Preparation of Hand Sanitizer">
+<meta property="og:description" content="Engineering Chemistry Laboratory Project">
+<meta property="og:type" content="website">
+
+<!-- Fonts -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+
+<!-- Font Awesome -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+<!-- Styles -->
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- ===================== LOADING SCREEN ===================== -->
+<div class="loader" id="loader">
+  <div class="loader-flask">
+    <div class="flask-liquid"></div>
+    <div class="flask-bubble b1"></div>
+    <div class="flask-bubble b2"></div>
+    <div class="flask-bubble b3"></div>
+  </div>
+  <p class="loader-text">Mixing the formula<span class="dots"><span>.</span><span>.</span><span>.</span></span></p>
+</div>
+
+<!-- ===================== SCROLL PROGRESS ===================== -->
+<div class="progress-bar" id="progressBar"></div>
+
+<!-- ===================== CURSOR GLOW ===================== -->
+<div class="cursor-glow" id="cursorGlow"></div>
+
+<!-- ===================== NAVBAR ===================== -->
+<nav class="navbar" id="navbar">
+  <div class="nav-container">
+    <a href="#home" class="nav-logo">
+      <i class="fa-solid fa-flask"></i>
+      <span>Sanitizer<b>Lab</b></span>
+    </a>
+
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#home" class="nav-link active-link">Home</a></li>
+      <li><a href="#materials" class="nav-link">Materials Used</a></li>
+      <li><a href="#flowchart" class="nav-link">Flowchart</a></li>
+      <li><a href="#procedure" class="nav-link">Procedure</a></li>
+      <li><a href="#gallery" class="nav-link">Gallery</a></li>
+      <li><a href="#applications" class="nav-link">Applications</a></li>
+      <li><a href="#pros-cons" class="nav-link">Pros &amp; Cons</a></li>
+      <li><a href="#team" class="nav-link">Team</a></li>
+    </ul>
+
+    <div class="nav-toggle" id="navToggle">
+      <span></span><span></span><span></span>
+    </div>
+  </div>
+</nav>
+
+<!-- ===================== HOME / HERO ===================== -->
+<header class="hero" id="home">
+  <div class="hero-bg">
+    <div class="bubble bub1"></div>
+    <div class="bubble bub2"></div>
+    <div class="bubble bub3"></div>
+    <div class="bubble bub4"></div>
+    <div class="bubble bub5"></div>
+    <div class="bubble bub6"></div>
+    <div class="particle p1"></div>
+    <div class="particle p2"></div>
+    <div class="particle p3"></div>
+    <div class="particle p4"></div>
+    <div class="hero-gradient"></div>
+  </div>
+
+  <div class="hero-content">
+    <span class="hero-eyebrow reveal-fade"><i class="fa-solid fa-vial"></i> Engineering Chemistry Lab Report</span>
+    <h1 class="hero-title" id="typedTitle"></h1>
+    <p class="hero-subtitle reveal-fade">Engineering Chemistry Laboratory Project</p>
+    <a href="#materials" class="btn btn-primary ripple-btn reveal-fade">
+      <span>Explore Project</span>
+      <i class="fa-solid fa-arrow-down"></i>
+    </a>
+  </div>
+
+  <div class="scroll-indicator">
+    <span></span>
+  </div>
+</header>
+
+<div class="wave-divider">
+  <svg viewBox="0 0 1440 120" preserveAspectRatio="none"><path d="M0,64 C240,120 480,0 720,32 C960,64 1200,112 1440,64 L1440,120 L0,120 Z"></path></svg>
+</div>
+
+<!-- ===================== TEAM INTRO (on Home) ===================== -->
+<section class="section team-intro">
+  <div class="container">
+    <div class="section-heading reveal-up">
+      <span class="eyebrow">Who Made This</span>
+      <h2>Meet The Team</h2>
+      <p>Four members. One formulation.</p>
+    </div>
+
+    <div class="team-grid">
+      <div class="glass-card team-card reveal-up" style="--delay:0s">
+        <div class="team-photo"><i class="fa-solid fa-user"></i></div>
+        <h3>Add Name</h3>
+        <span class="roll">Roll No. — Add Roll Number</span>
+        <p class="contribution">Add Contribution</p>
+      </div>
+      <div class="glass-card team-card reveal-up" style="--delay:0.15s">
+        <div class="team-photo"><i class="fa-solid fa-user"></i></div>
+        <h3>Add Name</h3>
+        <span class="roll">Roll No. — Add Roll Number</span>
+        <p class="contribution">Add Contribution</p>
+      </div>
+      <div class="glass-card team-card reveal-up" style="--delay:0.3s">
+        <div class="team-photo"><i class="fa-solid fa-user"></i></div>
+        <h3>Add Name</h3>
+        <span class="roll">Roll No. — Add Roll Number</span>
+        <p class="contribution">Add Contribution</p>
+      </div>
+      <div class="glass-card team-card reveal-up" style="--delay:0.45s">
+        <div class="team-photo"><i class="fa-solid fa-user"></i></div>
+        <h3>Add Name</h3>
+        <span class="roll">Roll No. — Add Roll Number</span>
+        <p class="contribution">Add Contribution</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="wave-divider flip">
+  <svg viewBox="0 0 1440 120" preserveAspectRatio="none"><path d="M0,64 C240,120 480,0 720,32 C960,64 1200,112 1440,64 L1440,120 L0,120 Z"></path></svg>
+</div>
+
+<!-- ===================== MATERIALS USED ===================== -->
+<section class="section" id="materials">
+  <div class="container">
+    <div class="section-heading reveal-up">
+      <span class="eyebrow">01 — Ingredients</span>
+      <h2>Materials Used</h2>
+      <p>Every reagent and its role in the formulation.</p>
+    </div>
+
+    <div class="materials-grid">
+      <div class="material-card reveal-up">
+        <div class="material-img"><i class="fa-solid fa-flask-vial"></i></div>
+        <h3>Add Material Name</h3>
+        <p>Add Description</p>
+      </div>
+      <div class="material-card reveal-up">
+        <div class="material-img"><i class="fa-solid fa-flask-vial"></i></div>
+        <h3>Add Material Name</h3>
+        <p>Add Description</p>
+      </div>
+      <div class="material-card reveal-up">
+        <div class="material-img"><i class="fa-solid fa-flask-vial"></i></div>
+        <h3>Add Material Name</h3>
+        <p>Add Description</p>
+      </div>
+      <div class="material-card reveal-up">
+        <div class="material-img"><i class="fa-solid fa-flask-vial"></i></div>
+        <h3>Add Material Name</h3>
+        <p>Add Description</p>
+      </div>
+      <div class="material-card reveal-up">
+        <div class="material-img"><i class="fa-solid fa-flask-vial"></i></div>
+        <h3>Add Material Name</h3>
+        <p>Add Description</p>
+      </div>
+      <div class="material-card reveal-up">
+        <div class="material-img"><i class="fa-solid fa-flask-vial"></i></div>
+        <h3>Add Material Name</h3>
+        <p>Add Description</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== FLOWCHART & BLOCK DIAGRAM ===================== -->
+<section class="section section-alt" id="flowchart">
+  <div class="container">
+    <div class="section-heading reveal-up">
+      <span class="eyebrow">02 — Process Map</span>
+      <h2>Flowchart &amp; Block Diagram</h2>
+      <p>Click either diagram to view it full-screen.</p>
+    </div>
+
+    <div class="diagram-grid">
+      <div class="diagram-box slide-left">
+        <h3>Flowchart</h3>
+        <div class="diagram-placeholder lightbox-trigger" data-caption="Flowchart">
+          <i class="fa-solid fa-diagram-project"></i>
+          <span>Insert Flowchart Here</span>
+        </div>
+        <p class="diagram-caption">Add Description</p>
+      </div>
+      <div class="diagram-box slide-right">
+        <h3>Block Diagram</h3>
+        <div class="diagram-placeholder lightbox-trigger" data-caption="Block Diagram">
+          <i class="fa-solid fa-sitemap"></i>
+          <span>Insert Block Diagram Here</span>
+        </div>
+        <p class="diagram-caption">Add Description</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== PROCEDURE ===================== -->
+<section class="section" id="procedure">
+  <div class="container">
+    <div class="section-heading reveal-up">
+      <span class="eyebrow">03 — Method</span>
+      <h2>Procedure</h2>
+      <p>Step-by-step preparation sequence.</p>
+    </div>
+
+    <div class="timeline">
+      <div class="timeline-progress" id="timelineProgress"></div>
+
+      <div class="timeline-step reveal-left">
+        <div class="step-icon"><i class="fa-solid fa-ruler"></i></div>
+        <div class="step-content glass-card">
+          <span class="step-number">01</span>
+          <h3>Add Procedure</h3>
+          <p>Add Description</p>
+        </div>
+      </div>
+
+      <div class="timeline-step reveal-right">
+        <div class="step-icon"><i class="fa-solid fa-droplet"></i></div>
+        <div class="step-content glass-card">
+          <span class="step-number">02</span>
+          <h3>Add Procedure</h3>
+          <p>Add Description</p>
+        </div>
+      </div>
+
+      <div class="timeline-step reveal-left">
+        <div class="step-icon"><i class="fa-solid fa-flask"></i></div>
+        <div class="step-content glass-card">
+          <span class="step-number">03</span>
+          <h3>Add Procedure</h3>
+          <p>Add Description</p>
+        </div>
+      </div>
+
+      <div class="timeline-step reveal-right">
+        <div class="step-icon"><i class="fa-solid fa-arrows-spin"></i></div>
+        <div class="step-content glass-card">
+          <span class="step-number">04</span>
+          <h3>Add Procedure</h3>
+          <p>Add Description</p>
+        </div>
+      </div>
+
+      <div class="timeline-step reveal-left">
+        <div class="step-icon"><i class="fa-solid fa-bottle-droplet"></i></div>
+        <div class="step-content glass-card">
+          <span class="step-number">05</span>
+          <h3>Add Procedure</h3>
+          <p>Add Description</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== EXPERIMENT GALLERY ===================== -->
+<section class="section section-alt" id="gallery">
+  <div class="container">
+    <div class="section-heading reveal-up">
+      <span class="eyebrow">04 — In The Lab</span>
+      <h2>Experiment Gallery</h2>
+      <p>Snapshots from the preparation process.</p>
+    </div>
+
+    <div class="gallery-grid" id="galleryGrid">
+      <div class="gallery-item lightbox-trigger" data-caption="Add Caption">
+        <div class="gallery-placeholder"><i class="fa-solid fa-camera"></i><span>Insert Experiment Photo</span></div>
+        <div class="gallery-caption">Add Caption</div>
+      </div>
+      <div class="gallery-item lightbox-trigger" data-caption="Add Caption">
+        <div class="gallery-placeholder"><i class="fa-solid fa-camera"></i><span>Insert Experiment Photo</span></div>
+        <div class="gallery-caption">Add Caption</div>
+      </div>
+      <div class="gallery-item lightbox-trigger" data-caption="Add Caption">
+        <div class="gallery-placeholder"><i class="fa-solid fa-camera"></i><span>Insert Experiment Photo</span></div>
+        <div class="gallery-caption">Add Caption</div>
+      </div>
+      <div class="gallery-item lightbox-trigger" data-caption="Add Caption">
+        <div class="gallery-placeholder"><i class="fa-solid fa-camera"></i><span>Insert Experiment Photo</span></div>
+        <div class="gallery-caption">Add Caption</div>
+      </div>
+      <div class="gallery-item lightbox-trigger" data-caption="Add Caption">
+        <div class="gallery-placeholder"><i class="fa-solid fa-camera"></i><span>Insert Experiment Photo</span></div>
+        <div class="gallery-caption">Add Caption</div>
+      </div>
+      <div class="gallery-item lightbox-trigger" data-caption="Add Caption">
+        <div class="gallery-placeholder"><i class="fa-solid fa-camera"></i><span>Insert Experiment Photo</span></div>
+        <div class="gallery-caption">Add Caption</div>
+      </div>
+    </div>
+
+    <div class="slideshow" id="slideshow">
+      <div class="slideshow-track" id="slideshowTrack"></div>
+      <button class="slide-btn prev" id="prevSlide" aria-label="Previous slide"><i class="fa-solid fa-chevron-left"></i></button>
+      <button class="slide-btn next" id="nextSlide" aria-label="Next slide"><i class="fa-solid fa-chevron-right"></i></button>
+      <div class="slide-dots" id="slideDots"></div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== APPLICATIONS ===================== -->
+<section class="section" id="applications">
+  <div class="container">
+    <div class="section-heading reveal-up">
+      <span class="eyebrow">05 — Real World Use</span>
+      <h2>Applications</h2>
+      <p>Where this formulation matters, flip each card to read more.</p>
+    </div>
+
+    <div class="applications-grid">
+      <div class="flip-card reveal-up">
+        <div class="flip-inner">
+          <div class="flip-front">
+            <i class="fa-solid fa-hospital"></i>
+            <h3>Add Application</h3>
+          </div>
+          <div class="flip-back">
+            <p>Add Description</p>
+          </div>
+        </div>
+      </div>
+      <div class="flip-card reveal-up">
+        <div class="flip-inner">
+          <div class="flip-front">
+            <i class="fa-solid fa-house"></i>
+            <h3>Add Application</h3>
+          </div>
+          <div class="flip-back">
+            <p>Add Description</p>
+          </div>
+        </div>
+      </div>
+      <div class="flip-card reveal-up">
+        <div class="flip-inner">
+          <div class="flip-front">
+            <i class="fa-solid fa-school"></i>
+            <h3>Add Application</h3>
+          </div>
+          <div class="flip-back">
+            <p>Add Description</p>
+          </div>
+        </div>
+      </div>
+      <div class="flip-card reveal-up">
+        <div class="flip-inner">
+          <div class="flip-front">
+            <i class="fa-solid fa-industry"></i>
+            <h3>Add Application</h3>
+          </div>
+          <div class="flip-back">
+            <p>Add Description</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== ADVANTAGES & DISADVANTAGES ===================== -->
+<section class="section section-alt" id="pros-cons">
+  <div class="container">
+    <div class="section-heading reveal-up">
+      <span class="eyebrow">06 — Weighing It Up</span>
+      <h2>Advantages &amp; Disadvantages</h2>
+    </div>
+
+    <div class="pros-cons-grid">
+      <div class="pc-column">
+        <h3 class="pc-title good"><i class="fa-solid fa-circle-check"></i> Advantages</h3>
+        <div class="glass-card pc-card reveal-left"><i class="fa-solid fa-star"></i><p>Add Advantages</p></div>
+        <div class="glass-card pc-card reveal-left"><i class="fa-solid fa-star"></i><p>Add Advantages</p></div>
+        <div class="glass-card pc-card reveal-left"><i class="fa-solid fa-star"></i><p>Add Advantages</p></div>
+      </div>
+      <div class="pc-column">
+        <h3 class="pc-title bad"><i class="fa-solid fa-circle-xmark"></i> Disadvantages</h3>
+        <div class="glass-card pc-card reveal-right"><i class="fa-solid fa-triangle-exclamation"></i><p>Add Disadvantages</p></div>
+        <div class="glass-card pc-card reveal-right"><i class="fa-solid fa-triangle-exclamation"></i><p>Add Disadvantages</p></div>
+        <div class="glass-card pc-card reveal-right"><i class="fa-solid fa-triangle-exclamation"></i><p>Add Disadvantages</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== TEAM PAGE ===================== -->
+<section class="section" id="team">
+  <div class="container">
+    <div class="section-heading reveal-up">
+      <span class="eyebrow">07 — Contributors</span>
+      <h2>Our Team</h2>
+      <p>Four hands, one project.</p>
+    </div>
+
+    <div class="team-grid team-grid-full">
+      <div class="tilt-card reveal-up">
+        <div class="tilt-inner">
+          <div class="team-photo large"><i class="fa-solid fa-user"></i></div>
+          <h3>Add Name</h3>
+          <span class="roll">Roll No. — Add Roll Number</span>
+          <p class="contribution">Add Contribution</p>
+          <div class="social-icons">
+            <a href="#" aria-label="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
+            <a href="#" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+            <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+          </div>
+        </div>
+      </div>
+      <div class="tilt-card reveal-up">
+        <div class="tilt-inner">
+          <div class="team-photo large"><i class="fa-solid fa-user"></i></div>
+          <h3>Add Name</h3>
+          <span class="roll">Roll No. — Add Roll Number</span>
+          <p class="contribution">Add Contribution</p>
+          <div class="social-icons">
+            <a href="#" aria-label="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
+            <a href="#" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+            <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+          </div>
+        </div>
+      </div>
+      <div class="tilt-card reveal-up">
+        <div class="tilt-inner">
+          <div class="team-photo large"><i class="fa-solid fa-user"></i></div>
+          <h3>Add Name</h3>
+          <span class="roll">Roll No. — Add Roll Number</span>
+          <p class="contribution">Add Contribution</p>
+          <div class="social-icons">
+            <a href="#" aria-label="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
+            <a href="#" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+            <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+          </div>
+        </div>
+      </div>
+      <div class="tilt-card reveal-up">
+        <div class="tilt-inner">
+          <div class="team-photo large"><i class="fa-solid fa-user"></i></div>
+          <h3>Add Name</h3>
+          <span class="roll">Roll No. — Add Roll Number</span>
+          <p class="contribution">Add Contribution</p>
+          <div class="social-icons">
+            <a href="#" aria-label="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
+            <a href="#" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+            <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="thank-you reveal-up">
+      <i class="fa-solid fa-flask-vial"></i>
+      <h3>Thank You</h3>
+      <p>This project was prepared and documented as part of our Engineering Chemistry laboratory coursework. We appreciate you taking the time to explore our work.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== FOOTER ===================== -->
+<footer class="footer">
+  <div class="footer-wave">
+    <svg viewBox="0 0 1440 100" preserveAspectRatio="none"><path d="M0,32 C360,90 1080,0 1440,48 L1440,100 L0,100 Z"></path></svg>
+  </div>
+  <div class="container footer-container">
+    <div class="footer-col">
+      <a href="#home" class="nav-logo">
+        <i class="fa-solid fa-flask"></i>
+        <span>Sanitizer<b>Lab</b></span>
+      </a>
+      <p>Preparation of Hand Sanitizer</p>
+      <p>Engineering Chemistry Project</p>
+      <p>Add College Name</p>
+      <p>Academic Year — Add Year</p>
+    </div>
+
+    <div class="footer-col">
+      <h4>Quick Links</h4>
+      <ul class="footer-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#materials">Materials Used</a></li>
+        <li><a href="#procedure">Procedure</a></li>
+        <li><a href="#gallery">Gallery</a></li>
+        <li><a href="#team">Team</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-col">
+      <h4>Connect</h4>
+      <div class="social-icons">
+        <a href="#" aria-label="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
+        <a href="#" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+        <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+      </div>
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    <p>Made with <i class="fa-solid fa-heart"></i> by Team &mdash; Preparation of Hand Sanitizer</p>
+  </div>
+</footer>
+
+<!-- ===================== BACK TO TOP ===================== -->
+<button class="back-to-top" id="backToTop" aria-label="Back to top">
+  <i class="fa-solid fa-arrow-up"></i>
+</button>
+
+<!-- ===================== LIGHTBOX ===================== -->
+<div class="lightbox" id="lightbox">
+  <button class="lightbox-close" id="lightboxClose" aria-label="Close"><i class="fa-solid fa-xmark"></i></button>
+  <div class="lightbox-content">
+    <i class="fa-solid fa-image"></i>
+    <p id="lightboxCaption">Add Image</p>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
