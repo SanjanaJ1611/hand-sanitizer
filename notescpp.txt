@@ -1,0 +1,5 @@
+header file:
+......
+debug in vscode:
+debug :remove bugs and diagnose.
+breakpoint:point where a debugger will break or take pause
